@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certifications | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="../index.html" class="logo">LD<span>.</span></a>
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Basculer le thème" title="Basculer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a class="active" href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="section container">
+      <h1>Certifications</h1>
+      <p class="section-subtitle">Mes certifications et formations</p>
+      <div class="certifications-grid">
+        <a href="../document/certification secnum.pdf" class="certification-card">
+          <div class="certification-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h2>MOOC SecNumAcadémie</h2>
+          <p>Sensibilisation à la cybersécurité et gestion des risques informatiques</p>
+          <div class="card-footer">
+            <span class="badge">Afficher le badge</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="../document/networking basics.pdf" class="certification-card">
+          <div class="certification-icon cisco">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h2>Cisco Netacad - Réseau</h2>
+          <p>Formation complète sur les principes des réseaux informatiques et protocoles</p>
+          <div class="card-footer">
+            <span class="badge">Afficher le badge</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="#" class="certification-card">
+          <div class="certification-icon cisco-sec">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h2>Cisco Netacad - Cybersécurité</h2>
+          <p>Spécialisation en cybersécurité et protection des infrastructures réseau</p>
+          <div class="card-footer">
+            <span class="badge">Afficher le badge</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> DUMONT-DEROBERT Louis
+      </div>
+    </footer>
+    <script src="../js/theme.js"></script>
+    <script src="certifications.js"></script>
+  </body>
+</html>

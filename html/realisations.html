@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réalisations | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="../index.html" class="logo">LD<span>.</span></a>
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Basculer le thème" title="Basculer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a class="active" href="realisations.html">Réalisations</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="section container">
+      <h1>Réalisations</h1>
+      <div class="grid">
+        <article class="card">
+          <h2>Mise en place PLSU</h2>
+          <p>Mise en place d'un Poste Libre Service Usagers pour l'accueil du Centre d'Impôts de Caen.</p>
+          <p class="tech">Linux</p>
+          <a href="#" class="btn-primary">Voir la réalisation</a>
+        </article>
+        <article class="card">
+          <h2>Application de ticketing</h2>
+          <p>Gestion des incidents en environnement SI.</p>
+          <p class="tech">PHP, MySQL, JavaScript</p>
+          <a href="#" class="btn-primary">Voir le projet</a>
+        </article>
+        <article class="card">
+          <h2>Audit sécurité poste client</h2>
+          <p>Contrôles sécurité + plan d'amélioration.</p>
+          <p class="tech">Windows, PowerShell, ANSSI</p>
+          <a href="#" class="btn-primary">Voir le projet</a>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> DUMONT-DEROBERT Louis
+      </div>
+    </footer>
+    <script src="../js/theme.js"></script>
+    <script src="realisations.js"></script>
+  </body>
+</html>

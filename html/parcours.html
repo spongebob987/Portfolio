@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcours | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="../index.html" class="logo">LD<span>.</span></a>
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Basculer le thème" title="Basculer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a class="active" href="parcours.html">Parcours</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="section container">
+      <h1>Parcours</h1>
+      <div class="timeline">
+        <article class="item">
+          <span>2024 - 2026</span>
+          <h2>BTS SIO - Option SISR</h2>
+          <p>Infrastructure, administration systèmes/réseaux, cybersécurité.</p>
+        </article>
+        <article class="item">
+          <span>Alternance</span>
+          <h2>DGFIP - Assistant Utilisateurs</h2>
+          <p>Support, diagnostic incidents, accompagnement utilisateurs.</p>
+        </article>
+        <article class="item">
+          <span>Diplômes</span>
+          <h2>Baccalauréat</h2>
+          <p>Formation générale et base méthodologique.</p>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> DUMONT-DEROBERT Louis
+      </div>
+    </footer>
+    <script src="../js/theme.js"></script>
+    <script src="parcours.js"></script>
+  </body>
+</html>
