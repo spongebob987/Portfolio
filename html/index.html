@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Accueil du portfolio BTS SIO E4 de DUMONT-DEROBERT Louis" />
+    <title>Accueil | Portfolio Louis DUMONT-DEROBERT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">LD<span>.</span></a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Basculer le thème" title="Basculer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>Bienvenue sur mon Portfolio</h1>
+          <p class="hero-subtitle">Je suis Louis DUMONT-DEROBERT, étudiant en BTS SIO, passionné par l'informatique, plus précisément l'administration réseaux et la cybersécurité.</p>
+          <a href="realisations.html" class="btn-primary">Voir mes réalisations</a>
+        </div>
+      </section>
+
+      <!-- Présentation Section -->
+      <section class="presentation section container">
+        <div class="presentation-content">
+          <h2>À propos de moi</h2>
+          <p>Je suis un étudiant en BTS SIO (Services Informatiques aux Organisations) option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Mon objectif est de devenir Administrateur systèmes et réseaux.</p>
+        </div>
+      </section>
+
+      <!-- Parcours Section -->
+      <section class="parcours section container">
+        <h2>Mon Parcours</h2>
+        <div class="timeline-horizontal">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 - 2024</span>
+              <h3>Baccalauréat Technologique STI2D</h3>
+              <p>Institut Lemonnier - Formation en Sciences et Technologies de l'Industrie et du Développement Durable.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - 2026</span>
+              <h3>BTS SIO - Option SISR</h3>
+              <p>En alternance à DGFIP - Infrastructure, administration systèmes/réseaux, cybersécurité.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Alternance</span>
+              <h3>DGFIP - Assistant Utilisateurs</h3>
+              <p>Support, diagnostic incidents, accompagnement utilisateurs et administration système.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Compétences Techniques Section -->
+      <section class="competences section container">
+        <h2>Mes Compétences Techniques</h2>
+        <ul class="skills">
+          <li>Administration des systèmes et réseaux</li>
+          <li>Virtualisation et gestion des serveurs</li>
+          <li>Cybersécurité et diagnostic incidents</li>
+          <li>Support utilisateurs N2</li>
+          <li>Gestion et Résolution de tickets</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section container">
+        <h2>Contactez-moi</h2>
+        <p>Vous pouvez me contacter par email à l'adresse suivante :</p>
+        <p><a href="mailto:louis.dumontderobert@sts-sio-caen.info" class="btn-primary">louis.dumontderobert@sts-sio-caen.info</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> DUMONT-DEROBERT Louis • Portfolio BTS SIO E5</p>
+      </div>
+    </footer>
+    <script src="../js/theme.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
