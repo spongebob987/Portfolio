@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/realisations.css" />
   </head>
   <body>
     <header class="site-header">
@@ -38,33 +39,51 @@
     </header>
     <main class="section container">
       <h1>Réalisations</h1>
+      
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="formation">Formation</button>
+        <button class="filter-btn" data-filter="entreprise">Entreprise</button>
+      </div>
+
       <div class="grid">
-        <article class="card">
+        <article class="card" data-category="entreprise">
           <h2>Mise en place PLSU</h2>
           <p>Mise en place d'un Poste Libre Service Usagers pour l'accueil du Centre d'Impôts de Caen.</p>
           <p class="tech">Linux</p>
-          <a href="#" class="btn-primary">Voir la réalisation</a>
+          <a href="../document/plsu.pdf" class="btn-primary">Voir le projet</a>
         </article>
-        <article class="card">
+        <article class="card" data-category="formation">
           <h2>Mise en place d'un NAS</h2>
           <p>Mise en place d'un Serveur NAS avec la solution logicielle Truenas dans le contexte de projet GSB.</p>
           <p class="tech">Stockage de fichiers </p>
           <a href="../document/procédure d'installation truenas.pdf" class="btn-primary">Voir le projet</a>
         </article>
-        <article class="card">
-          <h2>Audit sécurité poste client</h2>
-          <p>Contrôles sécurité + plan d'amélioration.</p>
-          <p class="tech">Windows, PowerShell, ANSSI</p>
-          <a href="#" class="btn-primary">Voir le projet</a>
+        <article class="card" data-category="formation">
+          <h2>Mise en place partage Samba</h2>
+          <p>Mise en place d'un partage de fichiers Samba sur un serveur Linux.</p>
+          <p class="tech">Windows, Linux, Samba</p>
+          <a href="../document/Procédure Samba.pdf" class="btn-primary">Voir le projet</a>
+        </article>
+        <article class="card" data-category="entreprise">
+          <h2>Gestion du Parc</h2>
+          <p>Gestion complète du parc informatique d'une entreprise avec inventaire et suivi des matériels.</p>
+          <p class="tech">Gestion d'infrastructure</p>
+          <button class="btn-primary" data-modal="gestion-parc">Voir le projet</button>
         </article>
       </div>
     </main>
+
+    <!-- Modal pour l'image du parc informatique -->
+    <div id="gestion-parc" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" src="../document/gestion%20parc%20informatique.png" alt="Gestion du Parc informatique">
+    </div>
     <footer class="footer">
       <div class="container">
         © <span id="year"></span> DUMONT-DEROBERT Louis
       </div>
     </footer>
     <script src="../js/theme.js"></script>
-    <script src="realisations.js"></script>
+    <script src="../js/realisations.js"></script>
   </body>
 </html>
