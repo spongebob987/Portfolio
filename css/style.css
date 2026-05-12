@@ -1064,6 +1064,12 @@ p {
   margin-bottom: 2.5rem;
 }
 
+.cv-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
