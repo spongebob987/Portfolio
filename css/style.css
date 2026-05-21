@@ -559,14 +559,17 @@ p {
   width: 2px;
   background: linear-gradient(180deg, var(--accent) 0%, rgba(37, 99, 235, 0.3) 100%);
   transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .item {
   position: relative;
+  z-index: 1;
   padding: 2rem;
   border: 1px solid var(--border);
   border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(30, 58, 138, 0.05));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(30, 58, 138, 0.05)), var(--bg);
   text-align: center;
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.08);
   transition: all 0.3s ease;
@@ -576,7 +579,7 @@ p {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
   border-color: var(--accent);
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(30, 58, 138, 0.08));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(30, 58, 138, 0.08)), var(--bg);
 }
 
 .item-content {
@@ -815,6 +818,40 @@ p {
   position: relative;
   z-index: 2;
   margin-top: 1.5rem;
+}
+
+/* Contact socials (LinkedIn / GitHub) */
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(37, 99, 235, 0.55);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+.socials a i {
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
 .contact form {
@@ -1067,6 +1104,8 @@ p {
 .cv-actions {
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-top: 1.25rem;
 }
 
